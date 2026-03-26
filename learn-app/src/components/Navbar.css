@@ -1,0 +1,10 @@
+.navbar { display: flex; justify-content: space-between; padding: 1rem; background-color: #333; color: #fff; }
+.nav-links { display: flex; list-style: none; }
+.nav-links a { color: #fff; text-decoration: none; padding: 0 1rem; }
+.nav-links a.active { color: #ff9800; }
+.mobile-menu-icon { display: none; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; } /* Simplified: Mobile implementation needs JS toggle logic */
+  .mobile-menu-icon { display: block; }
+}
